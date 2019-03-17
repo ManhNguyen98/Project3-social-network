@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social | Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="mainBgColor">
+    <section class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="/">
+                        <img src="img/social-logo.png" alt="Social Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="loginForm">
+                        <!-- Start Login Form -->
+                        <form action="#" method="POST" class="formLogin" id="loginForm" novalidate="novalidate">
+                            <div class="form-group mb-5 paddingForm">
+                              <h3 class="mb-4 mt-5 textMain">Đăng nhập</h3>
+                              <input type="text" class="w-100 p-2 mb-3 input" name="username" id="logInUserName" placeholder="Tên đăng nhập" autocomplete="off">
+                              <input type="password" class="w-100 p-2 input" name="password" id="loginPassword" placeholder="Mật khẩu">
+                            </div>
+                            <div class="form-action paddingForm">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="button" value="Đăng nhập" class="w-100 p-2 button text-uppercase" onclick="Auth.login()"><br>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters pt-2">
+                                    <div class="col-6">
+                                        <label for="">
+                                            <input type="checkbox" name="rememberLogin" value="1">Nhớ đăng nhập
+                                        </label>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="javascript:;" id="forgotPass">Quên mật khẩu?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loginOptions paddingForm py-4">
+                                <span class="float-left">hoặc</span>
+                                <ul class="socialIcon d-flex list-unstyled float-right">
+                                    <li>
+                                        <a href="">
+                                            <img src="img/fb.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/twitter.png" alt="twitter">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/google.png" alt="google">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/linkedin.jpg" alt="linkedin">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="createAccount button">
+                                <p class="w-100 p-3 mb-0">
+                                    <a href="javascript:;" id="createAcc" class="text-uppercase">Tạo tài khoản</a>
+                                </p>
+                            </div>
+                        </form>
+                        <!-- End Login Form -->
+                        <!-- Start Recovery Password Form -->
+                        <form action="index.html" method="post" class="formRecoveryPass paddingForm pb-4" id="recoveryForm" style="display:none;">
+                            <h3 class="mb-4 mt-5 textMain">Quên mật khẩu?</h3>
+                            <p class="text-left">Nhập địa chỉ email để lấy lại mật khẩu</p>
+                            <div class="form-group">
+                              <input type="text" name="emailRecovery" class="w-100 p-2 mb-3 input" placeholder="Địa chỉ Email" aria-describedby="helpId">
+                            </div>
+                            <div class="form-action pb-5">
+                                <input type="button" value="Trở lại" class="float-left buttonBack p-2 px-4" id="forgotPassBackBtn">
+                                <input type="submit" value="Gửi" class="float-right button p-2 px-4">
+                            </div>
+                        </form>
+                        <!-- End Recovery Password Form -->
+                        <!-- Start Sign up Form -->
+                        <form action="index.html" method="POST" class="formSignUp paddingForm pb-4" id="signUpForm" style="display:none;">
+                            <h3 class="mb-4 mt-5 textMain">Đăng ký</h3>
+                            <div class="form-group">
+                                <input type="text" name="fullName" class="w-100 p-2 mb-3 input" placeholder="Họ và tên" autocomplete="off">
+                                <input type="email" name="signUpEmail" class="w-100 p-2 mb-3 input" placeholder="Địa chỉ email" autocomplete="off">
+                                <input type="text" name="signUpUserName" class="w-100 p-2 mb-3 input" placeholder="Tên đăng nhập" autocomplete="off">
+                                <input type="password" name="signUpPw" id="signUpPw" class="w-100 p-2 mb-3 input" placeholder="Mật khẩu mới">
+                                <input type="password" name="signUpRePw" class="w-100 p-2 mb-3 input" placeholder="Nhập lại mật khẩu">
+                                <p class="float-left w-100 text-left">Ngày sinh</p>
+                                <div class="text-left">
+                                    <input type="date" name="signUpBirthday"  class="input">
+                                </div>
+                                <div class="gender text-left my-2">
+                                    <input type="radio" name="gender"  value="Nam">Nam
+                                    <input type="radio" name="gender"  value="Nữ">Nữ
+                                    <input type="radio" name="gender"  value="Khác">Khác
+                                </div>
+                                <!-- <div class="text-left">
+                                    <input type="checkbox" name="licenseAgree" id="" value="1">Tôi đồng ý với <a href="">điều khoản</a>
+                                </div> -->
+                            </div>
+                            <div class="form-action pb-5">
+                                <input type="button" value="Trở lại" class="float-left p-2 px-4 buttonBack" id="signUpBackButton">
+                                <input type="submit" value="Đăng ký" class="float-right p-2 px-4 button" onclick="Auth.validate();">
+                            </div>
+                        </form>
+                        <!-- End Sign up Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="m-0 p-2 copyright">2019 &#169 Social</p>
+    </footer>
+    <!-- JavaScript libraries -->
+    <script src="js/lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/lib/popper.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/jquery.validate.min.js"></script>
+    <script src="js/lib//additional-methods.min.js"></script>
+    <script src="js/lib/js.cookie.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/authentication.js"></script>
+    <script>
+        jQuery.extend(jQuery.validator.messages, {
+                required: null,
+                email: null,
+                equalTo: null,
+                date: null,
+                // dateISO: "Please enter a valid date (ISO).",
+                // remote: "Đã tồn tại.",
+                // url: "Please enter a valid URL.",
+                // number: "Xin hãy nhập trường số.",
+                // digits: "Vui lòng chỉ nhập số.",
+                // creditcard: "Please enter a valid credit card number.",
+                // accept: "Please enter a value with a valid extension.",
+                // maxlength: jQuery.validator.format("Xin hãy nhập ít nhất là {0} kí tự."),
+                // ranglength: jQuery.validator.format("Xin hãy không nhập quá {0} kí tự."),
+                // minelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+                // range: jQuery.validator.format("Please enter a value between {0} and {1}."),
+                // max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
+                // min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+            });
+        Auth.init();
+    </script>
+</body>
+</html>
