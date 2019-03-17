@@ -151,6 +151,10 @@ header{
 .positionBottom{
     position: fixed;
     bottom: 0;
+    right: 0;
+    height: 60px;
+    width:70px;
+    background-color: $gray;
 }
 .circleNavBtn{
     @extend .button;
@@ -271,19 +275,14 @@ header{
         text-align: center;
         border-radius: 50%;
     }
-    &:hover{
+    &:hover, &:focus{
         .dropDown{
             display: block;
         }
     }
 }
-.user-control-icon{
-    &:hover{
-        .dropDown{
-            display: block;
-        }
-    }
-}
+
+
 .inline-item{
     display: flex;
     padding: 20px;
@@ -327,13 +326,13 @@ header{
     box-shadow: 0 0 34px 0 rgba(63,66,87,.1);
     background-color: #fff;
     width: 360px;
-    max-height: 400px;
-    overflow-y: scroll;
     .dropDownTitle{
         border-bottom: 1px solid #e6ecf5;
         color: #9a9fbf;
     }
     .notification{
+        max-height: 400px;
+        overflow-y: auto;
         ul{
             margin-bottom: 0;
         }
@@ -354,6 +353,42 @@ header{
 }
 .dropDownBell{
     right: -328%;
+}
+.user-control-icon{
+    &:hover{
+        .dropDown{
+            display: block;
+        }
+    }
+    a{
+        color: #fff;
+        font-size: 13px;
+        text-decoration: none;
+        span{
+            font-weight: 600;
+            &:hover{
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+    }
+}
+.user-control-dropdown{
+    right: 0%;
+    z-index: 30;
+    width: 200px;
+    li{
+        a{
+            color: #000;
+            i{
+                color: $extra-gray;
+                margin-right: 1.5rem;
+            }
+        }
+    }
+    &::before{
+        right: 40%;
+    }
 }
 .btnAccept{
     @extend .bgBlue;
@@ -386,13 +421,14 @@ header{
     width: 70px;
     .fixed-sidebar-left{
         position: absolute;
-        min-height: 100%;
+        height: 100%;
+        bottom: 0;
         background-color: #fff;
         font-size: 20px;
         text-align: center;
         .customScrollBar{
             height: 100%;
-            overflow-y: visible;
+            bottom: 0;
         }
 
         a{
@@ -407,6 +443,9 @@ header{
             }
         }
     }
+}
+.scroll{
+    overflow: auto;
 }
 .rightItem{
     margin-bottom: 20px;
