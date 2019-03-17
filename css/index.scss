@@ -123,6 +123,12 @@ header{
     height: 2.125rem;
     border-radius: 50%;
 }
+.user-img-3{
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
 .noOutline{
     &:focus,&:hover{
         outline: none;
@@ -271,6 +277,13 @@ header{
         }
     }
 }
+.user-control-icon{
+    &:hover{
+        .dropDown{
+            display: block;
+        }
+    }
+}
 .inline-item{
     display: flex;
     padding: 20px;
@@ -294,8 +307,15 @@ header{
         font-weight: 600;
         &:hover,&:active,&:focus{
             text-decoration: none;
+            color: $blue;
         }
     }
+}
+.notification-full-width{
+    width: 100%;
+}
+.chat-message-item{
+    color: $extra-gray;
 }
 .dropDown{
     display: none;
@@ -307,6 +327,8 @@ header{
     box-shadow: 0 0 34px 0 rgba(63,66,87,.1);
     background-color: #fff;
     width: 360px;
+    max-height: 400px;
+    overflow-y: scroll;
     .dropDownTitle{
         border-bottom: 1px solid #e6ecf5;
         color: #9a9fbf;
@@ -456,5 +478,39 @@ header{
         &:hover{
             color: $blue;
         }
+    }
+}
+.cover-background-user{
+    position: absolute;
+    bottom: -3rem;
+    left: 5.5rem;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+.user-content{
+    color: #fff;
+    a{
+        &:hover{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.profile-menu{
+    display: flex;
+    justify-content: space-around;
+    li a{
+        font-size: 14px;
+        color: $extra-gray;
+        font-weight: 600;
+        &:hover{
+            text-decoration: none;
+            color: #151515;
+        }
+    }
+    li a.active{
+        color: #151515;
     }
 }

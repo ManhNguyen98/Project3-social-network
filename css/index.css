@@ -94,6 +94,12 @@ header {
   height: 2.125rem;
   border-radius: 50%; }
 
+.user-img-3 {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  border: 5px solid #fff; }
+
 .noOutline:focus, .link:focus, .test ul li a:focus, .noOutline:hover, .link:hover, .test ul li a:hover {
   outline: none;
   text-decoration: none; }
@@ -212,6 +218,9 @@ header {
   .controlIcon:hover .dropDown {
     display: block; }
 
+.user-control-icon:hover .dropDown {
+  display: block; }
+
 .inline-item {
   display: flex;
   padding: 20px;
@@ -232,7 +241,14 @@ header {
     color: #000000;
     font-weight: 600; }
     .user-name a:hover, .user-name a:active, .user-name a:focus {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #38a9ff; }
+
+.notification-full-width {
+  width: 100%; }
+
+.chat-message-item {
+  color: #9a9fbf; }
 
 .dropDown {
   display: none;
@@ -242,7 +258,9 @@ header {
   z-index: 20;
   box-shadow: 0 0 34px 0 rgba(63, 66, 87, 0.1);
   background-color: #fff;
-  width: 360px; }
+  width: 360px;
+  max-height: 400px;
+  overflow-y: scroll; }
   .dropDown .dropDownTitle {
     border-bottom: 1px solid #e6ecf5;
     color: #9a9fbf; }
@@ -356,5 +374,32 @@ header {
   padding: 20px 10px; }
   .status-footer a:hover {
     color: #38a9ff; }
+
+.cover-background-user {
+  position: absolute;
+  bottom: -3rem;
+  left: 5.5rem;
+  z-index: 5;
+  display: flex;
+  align-items: center; }
+
+.user-content {
+  color: #fff; }
+  .user-content a:hover {
+    text-decoration: none;
+    color: #fff; }
+
+.profile-menu {
+  display: flex;
+  justify-content: space-around; }
+  .profile-menu li a {
+    font-size: 14px;
+    color: #9a9fbf;
+    font-weight: 600; }
+    .profile-menu li a:hover {
+      text-decoration: none;
+      color: #151515; }
+  .profile-menu li a.active {
+    color: #151515; }
 
 /*# sourceMappingURL=index.css.map */
