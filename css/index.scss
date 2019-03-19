@@ -418,15 +418,15 @@ header{
     overflow: auto;
 }
 .rightItem{
-    margin-bottom: 20px;
+    margin-bottom: 2.5rem;
     .content{
         line-height: 2;
         background-color: $btnHoverColor;
-        padding: 40px 30px;
+        padding: 2.5rem 1.875rem;
         color: #fff;
         a{
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: 2.5rem;
             text-decoration: none;
             opacity: .98;
             &:hover{
@@ -478,10 +478,10 @@ header{
     a{
         i{
             color: $blue;
-            font-size: 18px;
+            font-size: 1.125rem;
         }
         color: #000;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 600;
         &:hover{
             text-decoration: none;
@@ -641,3 +641,78 @@ header{
         width: 100%;
     }
 }
+@media (min-height: 576px) and (max-width:767px){
+    .cover-background-user{
+        bottom: 0rem;
+        left: .5rem;
+    }
+    .fixed-sidebar{
+        display: none;
+    }
+    .user-blog-control{
+        right: -3%;
+    }
+}
+@media (min-width: 768px)  and (max-width:991px) {
+    .cover-background-user{
+        bottom: -3.5rem;
+        left: .5rem;
+    }
+    .profile-section{
+        padding-left: 6rem;
+    }
+    .status-title{
+        a{
+            font-size: .65rem;
+        }
+    }
+    .user-name {
+        a {
+            font-size: .55rem;
+        }
+    }
+    .inline-item{
+        padding: .5rem;
+    }
+    .acceptRequest{
+        padding: .2rem .5rem;
+        line-height: 2rem;
+    }
+    .user-blog-control{
+        right: -4%;
+    }
+    body{
+        font-size: .65rem;
+    }
+    .rightItem{
+        .content{
+            padding: 1rem;
+        }
+        .fr-birth-name{
+            font-size: 1rem;
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .cover-background-user{
+        bottom: -3rem;
+        left:3.5rem;
+    }
+    .status-title{
+        a{
+            font-size: .8rem;
+        }
+    }
+    .user-name {
+        a {
+            font-size: .7rem;
+        }
+    }
+    .user-blog-control{
+        right: -3%;
+    }
+    .profile-section{
+        padding-left: 0;
+    }
+}
+
