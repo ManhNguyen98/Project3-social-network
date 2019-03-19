@@ -150,15 +150,24 @@ header{
     padding: 3px;
 }
 .positionBottom{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 60px;
+    // position: fixed;
+    // bottom: 0;
+    // right: 0;
+    height: 70px;
     width:70px;
+    box-shadow: 0 -50px 45px -3px rgba(255,255,255,.7);
     @extend .mainBgColor;
     i{
         color: #fff;
     }
+    &:hover{
+      a{
+          color: $blue;
+      }
+    }
+}
+.big-bottom{
+    width: 16rem;
 }
 .circleNavBtn{
     @extend .button;
@@ -388,31 +397,79 @@ header{
     min-height: 100%;
     top: 54px;
     width: 70px;
-    .fixed-sidebar-left{
-        position: absolute;
-        height: 100%;
+    .open{
+        transform: translateX(0%);
+        transition-delay: 0.3s;
+        transition: transform .5s cubic-bezier(.55,0,.1,1);
+    }
+    .close{
+        transform: translateX(-100%);
+        transition-duration: 0.3s;
+        transition: transform .5s cubic-bezier(.55,0,.1,1);
+    }
+    .close-1{
+        transform: translateX(100%);
+        transition-duration: 0.3s;
+        transition: transform .5s cubic-bezier(.55,0,.1,1);
+    }
+}
+.fixed-sidebar-left{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    background-color: #fff;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 34px 0 rgba(63,66,87,.1);
+    .customScrollBar{
+        height: calc(100% - 7.8rem);
         bottom: 0;
-        background-color: #fff;
-        font-size: 20px;
-        text-align: center;
-        box-shadow: 0 0 34px 0 rgba(63,66,87,.1);
-        .customScrollBar{
-            height: 100%;
-            bottom: 0;
+    }
+    .left{
+        height: 100%;
+    }
+    a{
+        img{
+            @extend .userImg1
         }
-
-        a{
-            img{
-                @extend .userImg1
+        display: block;
+        padding: 20px;
+        color: #9a9fbf;
+        &:hover{
+            color: $blue;
+        }
+    }
+}
+.sidebar--large{
+    width: 14.5rem;
+    transform: translateX(-100%);
+    li{
+        &:hover{
+            background-color: $gray;
+        }
+    }
+    a{
+        padding: 1.5rem 0rem 1rem 1rem;
+        text-align: left;
+        text-decoration: none;
+        font-size: .95rem;
+        i{
+            margin-right: 1rem;
+        }
+        &:hover,&:focus{
+            span{
+                color: #000;
+                font-weight: 600;
             }
-            display: block;
-            padding: 20px;
-            color: #9a9fbf;
-            &:hover{
+            i{
                 color: $blue;
             }
         }
     }
+}
+.sidebar--large-right{
+    width: 16rem;
+    transform: translateX(100%);
 }
 .scroll{
     overflow: auto;
@@ -641,6 +698,41 @@ header{
         width: 100%;
     }
 }
+.user-thumb--container{
+    padding: 1.25rem;
+}
+.chat-right{
+    padding-right: 0;
+    padding-bottom: 0;
+    display: flex;
+}
+.chat-name{
+    a{
+        padding-top: 0;
+        padding-bottom: 0;
+        color: #000;
+        font-weight: 600;
+    }
+}
+.user-thumb{
+    cursor: pointer;
+    position: relative;
+}
+.icon-status{
+    width: 0.5rem;
+    height: .5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+}
+.online{
+    background-color: $blue;
+}
+.offline{
+    background-color: $extra-orange;
+}
 @media (min-height: 576px) and (max-width:767px){
     .cover-background-user{
         bottom: 0rem;
@@ -695,7 +787,7 @@ header{
 }
 @media (min-width: 992px) and (max-width: 1199px){
     .cover-background-user{
-        bottom: -3rem;
+        bottom: -4rem;
         left:3.5rem;
     }
     .status-title{

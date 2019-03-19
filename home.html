@@ -16,10 +16,10 @@
 <body style="color:#000;">
     <!-- Fixed Sidebar Left -->
     <div class="fixed-sidebar">
-        <div class="fixed-sidebar-left sidebar--small">
-            <div class="customScrollBar scroll">
+        <div class="fixed-sidebar-left sidebar--small" id="sidebar--small-1">
+            <div class="customScrollBar left scroll">
                 <ul class="py-2">
-                    <li>
+                    <li class="js-open-sidebar-1">
                         <a href="#"><i class="fas fa-bars"></i></a>
                     </li>
                     <li>
@@ -40,67 +40,192 @@
                 </ul>
             </div>
         </div>
-        <div class="fixed-sidebar-left sidebar--large">
-
+        <div class="fixed-sidebar-left sidebar--large" id="sidebar--large-1">
+            <div class="customScrollBar left scroll">
+                <ul class="py-2">
+                    <li class="js-close--sidebar-1">
+                        <a href="#"><i class="fas fa-times"></i><span>Đóng</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-comments"></i><span>Phòng trò chuyện</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-comment"></i><span>Phòng của bạn</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-calendar-alt"></i><span>Sự kiện</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-birthday-cake"></i><span>Sinh nhật bạn bè</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <!-- End Fixed Sidebar Left -->
     <!-- Fixed Sidebar Right -->
     <div class="fixed-sidebar right">
-        <div class="fixed-sidebar-left sidebar--small">
+        <div class="fixed-sidebar-left sidebar--small" id="sidebar--small-2">
             <div class="customScrollBar">
                 <ul class="h-100 py-2 scroll">
-                    <li>
-                        <div>
-                            <a href="">
-                                <img src="img/fb.png" alt="">
-                                <span></span>
-                            </a>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <a href="">
-                                <img src="img/fb.png" alt="">
-                                <span></span>
-                            </a>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <a href="">
-                                <img src="img/fb.png" alt="">
-                                <span></span>
-                            </a>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <a href="">
-                                <img src="img/fb.png" alt="">
-                                <span></span>
-                            </a>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <a href="">
-                                <img src="img/fb.png" alt="">
-                                <span></span>
-                            </a>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
                         </div>
                     </li>
-                    <!-- <li class="positionBottom">
-                        <a href="#"><i class="fas fa-bars"></i></a>
-                    </li> -->
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div class="positionBottom ">
-                    <a href="#" class=""><i class="fas fa-bars"></i></a>
+            <div class="positionBottom js-open-sidebar-2">
+                <a href="javascript:;" class=""><i class="fas fa-arrow-left"></i></a>
             </div>
         </div>
-        <div class="fixed-sidebar-left sidebar--large">
-
+        <div class="fixed-sidebar-left right sidebar--large sidebar--large-right" id="sidebar--large-2">
+            <div class="customScrollBar">
+                <ul class="h-100 py-2 scroll">
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="positionBottom big-bottom js-close--sidebar-2">
+                <a href="javascript:;" class="text-center"><i class="fas fa-arrow-right"></i><span>Đóng</span></a>
+            </div>
         </div>
     </div>
     <!-- End Fixed Sidebar Right -->

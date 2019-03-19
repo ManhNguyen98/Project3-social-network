@@ -89,7 +89,7 @@ header {
   .btnSearch:active, .btnSearch:focus {
     outline: none; }
 
-.userImg1, .fixed-sidebar .fixed-sidebar-left a img {
+.userImg1, .fixed-sidebar-left a img {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%; }
@@ -115,13 +115,16 @@ header {
     color: #fff; }
 
 .positionBottom {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 60px;
-  width: 70px; }
+  height: 70px;
+  width: 70px;
+  box-shadow: 0 -50px 45px -3px rgba(255, 255, 255, 0.7); }
   .positionBottom i {
     color: #fff; }
+  .positionBottom:hover a {
+    color: #38a9ff; }
+
+.big-bottom {
+  width: 16rem; }
 
 .circleNavBtn {
   height: 2rem;
@@ -309,23 +312,60 @@ header {
   min-height: 100%;
   top: 54px;
   width: 70px; }
-  .fixed-sidebar .fixed-sidebar-left {
-    position: absolute;
-    height: 100%;
-    bottom: 0;
-    background-color: #fff;
-    font-size: 20px;
-    text-align: center;
-    box-shadow: 0 0 34px 0 rgba(63, 66, 87, 0.1); }
-    .fixed-sidebar .fixed-sidebar-left .customScrollBar {
-      height: 100%;
-      bottom: 0; }
-    .fixed-sidebar .fixed-sidebar-left a {
-      display: block;
-      padding: 20px;
-      color: #9a9fbf; }
-      .fixed-sidebar .fixed-sidebar-left a:hover {
-        color: #38a9ff; }
+  .fixed-sidebar .open {
+    transform: translateX(0%);
+    transition-delay: 0.3s;
+    transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1); }
+  .fixed-sidebar .close {
+    transform: translateX(-100%);
+    transition-duration: 0.3s;
+    transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1); }
+  .fixed-sidebar .close-1 {
+    transform: translateX(100%);
+    transition-duration: 0.3s;
+    transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1); }
+
+.fixed-sidebar-left {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  background-color: #fff;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 0 34px 0 rgba(63, 66, 87, 0.1); }
+  .fixed-sidebar-left .customScrollBar {
+    height: calc(100% - 7.8rem);
+    bottom: 0; }
+  .fixed-sidebar-left .left {
+    height: 100%; }
+  .fixed-sidebar-left a {
+    display: block;
+    padding: 20px;
+    color: #9a9fbf; }
+    .fixed-sidebar-left a:hover {
+      color: #38a9ff; }
+
+.sidebar--large {
+  width: 14.5rem;
+  transform: translateX(-100%); }
+  .sidebar--large li:hover {
+    background-color: #e6ecf5; }
+  .sidebar--large a {
+    padding: 1.5rem 0rem 1rem 1rem;
+    text-align: left;
+    text-decoration: none;
+    font-size: .95rem; }
+    .sidebar--large a i {
+      margin-right: 1rem; }
+    .sidebar--large a:hover span, .sidebar--large a:focus span {
+      color: #000;
+      font-weight: 600; }
+    .sidebar--large a:hover i, .sidebar--large a:focus i {
+      color: #38a9ff; }
+
+.sidebar--large-right {
+  width: 16rem;
+  transform: translateX(100%); }
 
 .scroll {
   overflow: auto; }
@@ -509,6 +549,39 @@ header {
   .post-thumb img {
     width: 100%; }
 
+.user-thumb--container {
+  padding: 1.25rem; }
+
+.chat-right {
+  padding-right: 0;
+  padding-bottom: 0;
+  display: flex; }
+
+.chat-name a {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #000;
+  font-weight: 600; }
+
+.user-thumb {
+  cursor: pointer;
+  position: relative; }
+
+.icon-status {
+  width: 0.5rem;
+  height: .5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff; }
+
+.online {
+  background-color: #38a9ff; }
+
+.offline {
+  background-color: #fa6341; }
+
 @media (min-height: 576px) and (max-width: 767px) {
   .cover-background-user {
     bottom: 0rem;
@@ -552,7 +625,7 @@ header {
     font-size: 1rem; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   .cover-background-user {
-    bottom: -3rem;
+    bottom: -4rem;
     left: 3.5rem; }
 
   .status-title a {
