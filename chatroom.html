@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social | Chat Room</title>
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/circleNav.css">
+    <link rel="stylesheet" type="text/css" href="css/group.css">
+</head>
+
+<body style="color:#000;">
+    <!-- Fixed Sidebar Left -->
+    <div class="fixed-sidebar">
+        <div class="fixed-sidebar-left sidebar--small" id="sidebar--small-1">
+            <div class="customScrollBar left scroll">
+                <ul class="py-2">
+                    <li class="js-open-sidebar-1">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-comments"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-comment"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-birthday-cake"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fixed-sidebar-left sidebar--large" id="sidebar--large-1">
+            <div class="customScrollBar left scroll">
+                <ul class="py-2">
+                    <li class="js-close--sidebar-1">
+                        <a href="#"><i class="fas fa-times"></i><span>Đóng</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-comments"></i><span>Phòng trò chuyện</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-comment"></i><span>Phòng của bạn</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-calendar-alt"></i><span>Sự kiện</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-birthday-cake"></i><span>Sinh nhật bạn bè</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Fixed Sidebar Left -->
+    <!-- Fixed Sidebar Right -->
+    <div class="fixed-sidebar right">
+        <div class="fixed-sidebar-left sidebar--small" id="sidebar--small-2">
+            <div class="customScrollBar">
+                <ul class="h-100 py-2 scroll">
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status offline"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="positionBottom js-open-sidebar-2">
+                <a href="javascript:;" class=""><i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+        <div class="fixed-sidebar-left right sidebar--large sidebar--large-right" id="sidebar--large-2">
+            <div class="customScrollBar">
+                <ul class="h-100 py-2 scroll">
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                    <li class="user-thumb--container chat-right">
+                        <div class="user-thumb">
+                            <img src="img/fb.png" alt="" class="userImg1">
+                            <span class="icon-status online"></span>
+                        </div>
+                        <div class="chat-name">
+                            <a href="#">Nguyễn Thiết Mạnh <p class="date-post">20 phút trước</p></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="positionBottom big-bottom js-close--sidebar-2">
+                <a href="javascript:;" class="text-center"><i class="fas fa-arrow-right"></i><span>Đóng</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Fixed Sidebar Right -->
+    <header class="mainBgColor mb-4" id="headerPage">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-md-2 col-3 text-md-left text-center">
+                    <a href="/">
+                        <img src="img/social-logo.png" alt="Social" class="noOutline" style="width:6.6rem;">
+                    </a>
+                </div>
+                <div class="col-md-4 col-9 text-center px-md-0 px-5">
+                    <div class="middleDiv w-100">
+                        <input type="text" placeholder="Tìm kiếm" class="input p-0 w-75 border-0"><button
+                            class="btnSearch w-25"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-3 d-md-none d-block">
+                    <div class="js-open-sidebar-1 mobile--open">
+                        <p class="p-3 m-0"><i class="fas fa-bars"></i></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="controlContainer d-flex justify-content-lg-end justify-content-center">
+                        <div class="controlIcon">
+                            <i class="fas fa-user-plus"></i>
+                            <div class="labelAvatar bgBlue">3</div>
+                            <div class="dropDown">
+                                <div class="dropDownTitle titleSmall">
+                                    <p class="text-uppercase m-0 px-2">Lời mời kết bạn</p>
+                                </div>
+                                <div class="notification">
+                                    <ul class="notificationList">
+                                        <li class="inline-item">
+                                            <div class="notificationImg">
+                                                <img src="img/THO_2454.JPG" alt="">
+                                            </div>
+                                            <div class="user-name">
+                                                <a href="#">Nguyễn Thiết Mạnh</a>
+                                            </div>
+                                            <div class="notificationIcon">
+                                                <a href="#" class="acceptRequest btnAccept">+</a>
+                                                <a href="#" class="acceptRequest btnDel requestDel">-</a>
+                                            </div>
+                                        </li>
+                                        <li class="inline-item">
+                                            <div class="notificationImg">
+                                                <img src="img/nga.jpg" alt="">
+                                            </div>
+                                            <div class="user-name">
+                                                <a href="#">Vương Thị Nga</a>
+                                            </div>
+                                            <div class="notificationIcon">
+                                                <a href="#" class="acceptRequest btnAccept">+</a>
+                                                <a href="#" class="acceptRequest btnDel requestDel">-</a>
+                                            </div>
+                                        </li>
+                                        <li class="inline-item">
+                                            <div class="notificationImg">
+                                                <img src="img/yen.jpg" alt="">
+                                            </div>
+                                            <div class="user-name">
+                                                <a href="#">Nguyễn Thị Hải Yến</a>
+                                            </div>
+                                            <div class="notificationIcon">
+                                                <a href="#" class="acceptRequest btnAccept">+</a>
+                                                <a href="#" class="acceptRequest btnDel requestDel">-</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="controlIcon">
+                            <i class="fas fa-sms"></i>
+                            <div class="labelAvatar bgOrange">3</div>
+                            <div class="dropDown dropDownSms">
+                                <div class="dropDownTitle titleSmall">
+                                    <p class="text-uppercase m-0 px-2">Tin nhắn</p>
+                                </div>
+                                <div class="notification">
+                                    <ul class="notificationList">
+                                        <li class="inline-item">
+                                            <div class="notificationImg">
+                                                <img src="img/THO_2454.JPG" alt="">
+                                            </div>
+                                            <div class="user-name notification-full-width">
+                                                <a href="#">Nguyễn Thiết Mạnh</a>
+                                                <p class="chat-message-item">Chào mừng bạn đến với social</p>
+                                            </div>
+                                        </li>
+                                        <li class="inline-item">
+                                            <div class="notificationImg">
+                                                <img src="img/nga.jpg" alt="">
+                                            </div>
+                                            <div class="user-name notification-full-width">
+                                                <a href="#">Vương Thị Nga</a>
+                                                <p class="chat-message-item">Lorem Ipsum is simply dummy text of the
+                                                    printing and typesetting industry. Lorem Ipsum has been the
+                                                    industry's standard dummy text ever since the 1500s, when an unknown
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="inline-item">
+                                            <div class="notificationImg">
+                                                <img src="img/yen.jpg" alt="">
+                                            </div>
+                                            <div class="user-name notification-full-width">
+                                                <a href="#">Nguyễn Thị Hải Yến</a>
+                                                <p class="chat-message-item">Lorem Ipsum is simply dummy text of the
+                                                    printing and typesetting industry. Lorem Ipsum has been the
+                                                    industry's standard</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="controlIcon">
+                            <i class="far fa-bell"></i>
+                            <div class="labelAvatar bgGreen">3</div>
+                            <div class="dropDown dropDownBell">
+                                <div class="dropDownTitle titleSmall">
+                                    <p class="text-uppercase m-0 px-2">Thông báo</p>
+                                </div>
+                                <div class="notification">
+                                    <ul class="notificationList">
+                                        <li class="inline-item">
+                                            <div class="notificationImg">
+                                                <img src="img/THO_2454.JPG" alt="">
+                                            </div>
+                                            <div class="user-name notification-full-width">
+                                                <a href="#">Nguyễn Thiết Mạnh</a><span class="chat-message-item"> vừa
+                                                    bình luận</span> <a href="#">bài viết</a> của bạn
+                                            </div>
+                                        </li>
+                                        <li class="inline-item">
+                                            <div class="notificationImg">
+                                                <img src="img/yen.jpg" alt="">
+                                            </div>
+                                            <div class="user-name notification-full-width">
+                                                <a href="#">Nguyễn Thị Hải Yến</a><span class="chat-message-item"> đã
+                                                    tạo một</span> <a href="#">sự kiện</a>
+                                            </div>
+                                        </li>
+                                        <li class="inline-item">
+                                            <div class="notificationImg">
+                                                <img src="img/nga.jpg" alt="">
+                                            </div>
+                                            <div class="user-name notification-full-width">
+                                                <span class="chat-message-item">Bạn và </span><a href="#"> Vương Thị Nga
+                                                </a><span class="chat-message-item">đã trở thành bạn bè.</span><a
+                                                    href="#">Trò chuyện ngay</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 d-md-none d-block">
+                    <div class="js-open-sidebar-2 mobile--open">
+                        <p class="p-3 m-0"><i class="fas fa-arrow-left"></i></p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="h-100">
+                        <div class="h-100 m-auto user-control-icon" style="width:fit-content;">
+                            <a href="#" class="d-block middleDiv">
+                                <img src="img/THO_2454.JPG" alt="userImage" class="userImg1 noOutline">
+                                <span>Nguyễn Thiết Mạnh</span>
+                            </a>
+                            <div class="dropDown user-control-dropdown">
+                                <div class="notification">
+                                    <ul class="notificationList">
+                                        <li class="inline-item p-2">
+                                            <div class="user-name notification-full-width">
+                                                <a href="#">
+                                                    <i class="fas fa-cog"></i> Cài đặt
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="inline-item p-2">
+                                            <div class="user-name notification-full-width">
+                                                <a href="#">
+                                                    <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pb-5">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="cover-background d-none d-md-block">
+                        <img src="img/bg.jpg" alt="" class="w-100">
+                        <div class="cover-background-user mb-3">
+                            <div class="user-thumb">
+                                <img src="img/google.png" alt="" class="user-img-3">
+                            </div>
+                            <div class="user-content ml-4">
+                                <a href="#" class="h3">Nguyễn Thiết Mạnh</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-section mb-4 py-4 bg-white">
+                        <div class="row">
+                            <div class="col col-xl-8 col-lg-8 col-md-12 m-auto">
+                                <ul class="profile-menu">
+                                    <li><a href="#" class="active">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Friends</a></li>
+                                    <li><a href="#">Photo</a></li>
+                                    <li><a href="#">Events</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="photo bg-white rounded">
+                        <div class="photo-item text-center parent">
+                            <div class="child">
+                                <img src="img/twitter-item.png" class=" avatar avatar-border">
+                            </div>
+                        </div>
+                        <div class="photo-item parent">
+                            <div class="child">
+                                <div>
+                                    <h5>CN-CNTT-K61</h5>
+                                    <p>6 Friends in the Group</p>
+                                </div>
+                                <ul class="friend-list">
+                                    <li class="friend-list-item">
+                                        <img src="img/nga-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/manh-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/yen-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/twitter-item.png" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <div class="more-friend avatar-border">+16</div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <button class="btn btn-control btn-danger  mr-2" data-toggle="modal"
+                                        data-target="#create-friend-group-add-friends">+</button>
+                                    <button class="btn btn-control btn-primary">...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="photo bg-white rounded">
+                        <div class="photo-item text-center parent">
+                            <div class="child">
+                                <img src="img/twitter-item.png" class=" avatar avatar-border">
+                            </div>
+                        </div>
+                        <div class="photo-item parent">
+                            <div class="child">
+                                <div>
+                                    <h5>CN-CNTT-K61</h5>
+                                    <p>6 Friends in the Group</p>
+                                </div>
+                                <ul class="friend-list">
+                                    <li class="friend-list-item">
+                                        <img src="img/nga-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/manh-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/yen-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/twitter-item.png" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <div class="more-friend avatar-border">+16</div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <button class="btn btn-control btn-danger  mr-2" data-toggle="modal"
+                                        data-target="#create-friend-group-add-friends">+</button>
+                                    <button class="btn btn-control btn-primary">...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="photo bg-white rounded">
+                        <div class="photo-item text-center parent">
+                            <div class="child">
+                                <img src="img/twitter-item.png" class=" avatar avatar-border">
+                            </div>
+                        </div>
+                        <div class="photo-item parent">
+                            <div class="child">
+                                <div>
+                                    <h5>CN-CNTT-K61</h5>
+                                    <p>6 Friends in the Group</p>
+                                </div>
+                                <ul class="friend-list">
+                                    <li class="friend-list-item">
+                                        <img src="img/nga-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/manh-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/yen-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/twitter-item.png" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <div class="more-friend avatar-border">+16</div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <button class="btn btn-control btn-danger  mr-2" data-toggle="modal"
+                                        data-target="#create-friend-group-add-friends">+</button>
+                                    <button class="btn btn-control btn-primary">...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="photo bg-white rounded">
+                        <div class="photo-item text-center parent">
+                            <div class="child">
+                                <img src="img/twitter-item.png" class=" avatar avatar-border">
+                            </div>
+                        </div>
+                        <div class="photo-item parent">
+                            <div class="child">
+                                <div>
+                                    <h5>CN-CNTT-K61</h5>
+                                    <p>6 Friends in the Group</p>
+                                </div>
+                                <ul class="friend-list">
+                                    <li class="friend-list-item">
+                                        <img src="img/nga-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/manh-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/yen-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/twitter-item.png" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <div class="more-friend avatar-border">+16</div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <button class="btn btn-control btn-danger  mr-2" data-toggle="modal"
+                                        data-target="#create-friend-group-add-friends">+</button>
+                                    <button class="btn btn-control btn-primary">...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="photo bg-white rounded">
+                        <div class="photo-item text-center parent">
+                            <div class="child">
+                                <img src="img/twitter-item.png" class=" avatar avatar-border">
+                            </div>
+                        </div>
+                        <div class="photo-item parent">
+                            <div class="child">
+                                <div>
+                                    <h5>CN-CNTT-K61</h5>
+                                    <p>6 Friends in the Group</p>
+                                </div>
+                                <ul class="friend-list">
+                                    <li class="friend-list-item">
+                                        <img src="img/nga-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/manh-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/yen-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/twitter-item.png" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <div class="more-friend avatar-border">+16</div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <button class="btn btn-control btn-danger  mr-2" data-toggle="modal"
+                                        data-target="#create-friend-group-add-friends">+</button>
+                                    <button class="btn btn-control btn-primary">...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="photo bg-white rounded">
+                        <div class="photo-item text-center parent">
+                            <div class="child">
+                                <img src="img/twitter-item.png" class=" avatar avatar-border">
+                            </div>
+                        </div>
+                        <div class="photo-item parent">
+                            <div class="child">
+                                <div>
+                                    <h5>CN-CNTT-K61</h5>
+                                    <p>6 Friends in the Group</p>
+                                </div>
+                                <ul class="friend-list">
+                                    <li class="friend-list-item">
+                                        <img src="img/nga-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/manh-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/yen-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/twitter-item.png" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <div class="more-friend avatar-border">+16</div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <button class="btn btn-control btn-danger  mr-2" data-toggle="modal"
+                                        data-target="#create-friend-group-add-friends">+</button>
+                                    <button class="btn btn-control btn-primary">...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="photo bg-white rounded">
+                        <div class="photo-item text-center parent">
+                            <div class="child">
+                                <img src="img/twitter-item.png" class=" avatar avatar-border">
+                            </div>
+                        </div>
+                        <div class="photo-item parent">
+                            <div class="child">
+                                <div>
+                                    <h5>CN-CNTT-K61</h5>
+                                    <p>6 Friends in the Group</p>
+                                </div>
+                                <ul class="friend-list">
+                                    <li class="friend-list-item">
+                                        <img src="img/nga-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/manh-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/yen-item.jpg" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <img src="img/twitter-item.png" class="avatar-border">
+                                    </li>
+                                    <li class="friend-list-item">
+                                        <div class="more-friend avatar-border">+16</div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <button class="btn btn-control btn-danger  mr-2" data-toggle="modal"
+                                        data-target="#create-friend-group-add-friends">+</button>
+                                    <button class="btn btn-control btn-primary">...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="circleNav">
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+                <li><a href="#"><span class="far fa-image"></span></a></li>
+                <li><a href="#"><span class="fas fa-headphones"></span></a></li>
+                <li><a href="#"><span class="fas fa-home"></span></a></li>
+                <li><a href="#"><span class="fas fa-video"></span></a></li>
+                <li><a href="#"><span class="far fa-envelope"></span></a></li>
+            </ul>
+        </div>
+        <div id="cn-overlay" class="cn-overlay"></div>
+    </section>
+
+    <!-- <footer>
+        <p class="m-0 p-2 copyright positionBottom">2019 &#169 Social</p>
+    </footer> -->
+    <!-- JavaScript libraries -->
+    <script src="js/lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/lib/popper.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/circleNav.js"></script>
+</body>
+
+</html>
