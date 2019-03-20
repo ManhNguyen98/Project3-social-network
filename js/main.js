@@ -20,10 +20,6 @@ $('#signUpBackButton').click(function () {
 ///////////////////////////////////////////
 $('[data-toggle="tooltip"]').tooltip();
 
-window.onscroll = function () {
-    stickyHeader();
-}
-
 let headerPage = document.getElementById('headerPage');
 if (headerPage) {
     let sticky = headerPage.offsetTop;
@@ -35,6 +31,9 @@ if (headerPage) {
             headerPage.classList.remove('sticky');
         }
     }
+}
+window.onscroll = function () {
+    stickyHeader();
 }
 /*
 ***  Open side bar  ***

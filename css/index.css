@@ -587,6 +587,139 @@ header {
   text-align: center;
   color: #fff; }
 
+.btn-cancel {
+  background-color: #9a9fbf; }
+  .btn-cancel:hover {
+    background-color: #888da8; }
+
+.setting-container {
+  background-color: #fff; }
+
+.setting-title {
+  padding: 1rem 0rem 0rem 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e6ecf5; }
+  .setting-title h6 {
+    font-weight: 600; }
+
+.setting-item {
+  padding: 1rem;
+  font-size: .8rem; }
+  .setting-item a {
+    text-decoration: none;
+    color: #888da8; }
+    .setting-item a:hover {
+      color: #000;
+      font-weight: 600; }
+  .setting-item a.active {
+    color: #000;
+    font-weight: 600; }
+
+.setting-item--title {
+  padding-top: 1rem;
+  padding-left: .5rem;
+  border-bottom: 1px solid #e6ecf5;
+  margin-bottom: 1.5rem; }
+  .setting-item--title h6 {
+    color: #000;
+    font-weight: 600; }
+
+.group-form {
+  position: relative;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-bottom: 1rem; }
+  .group-form .form--control {
+    border: 1px solid #e6ecf5;
+    padding: 1.1rem;
+    width: 100%;
+    resize: none; }
+    .group-form .form--control:focus {
+      border: 1px solid #38a9ff;
+      outline: none; }
+  .group-form label {
+    position: absolute;
+    padding-top: .15rem;
+    padding-left: 1.1rem;
+    top: 0;
+    left: 0;
+    color: #000;
+    z-index: 1;
+    font-size: .75rem;
+    color: #888da8; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #2196F3; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+.description-toggle {
+  position: relative;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-bottom: 1rem; }
+  .description-toggle h6 {
+    font-weight: 600; }
+  .description-toggle p {
+    font-size: .8rem;
+    color: #888da8; }
+  .description-toggle label {
+    position: absolute;
+    padding-top: .15rem;
+    padding-left: 1.1rem;
+    top: 0;
+    right: 0;
+    color: #000;
+    z-index: 1;
+    font-size: .75rem;
+    color: #888da8; }
+
 @media (min-height: 576px) and (max-width: 767px) {
   .cover-background-user {
     bottom: 0rem;
