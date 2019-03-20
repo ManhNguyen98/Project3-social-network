@@ -1,4 +1,4 @@
-cubody {
+body {
   font-family: "Sarabun", sans-serif;
   overflow: visible;
   background-color: #edf2f6; }
@@ -116,14 +116,7 @@ header {
 
 .positionBottom {
   position: fixed;
-  bottom: 0; 
-  right: 0;
-  /*---start---*/
-  height: 60px;
-  background-color: #6600CC ;
-  width: 70px;
-  /* -----end----*/
-}
+  bottom: 0; }
 
 .circleNavBtn {
   height: 2rem;
@@ -320,15 +313,9 @@ header {
     background-color: #fff;
     font-size: 20px;
     text-align: center; }
-    .fixed-sidebar .fixed-sidebar-left {
+    .fixed-sidebar .fixed-sidebar-left .customScrollBar {
       height: 100%;
-      bottom: 0 
-    }
-     .customScrollBar{
-        height: 100%;
-      bottom: 0;
-     }
-      
+      overflow-y: visible; }
     .fixed-sidebar .fixed-sidebar-left a {
       display: block;
       padding: 20px;
@@ -416,6 +403,3 @@ header {
     color: #151515; }
 
 /*# sourceMappingURL=index.css.map */
-.scroll{
-  overflow: auto;
-}
