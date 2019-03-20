@@ -310,8 +310,8 @@ header {
   position: fixed;
   z-index: 22;
   min-height: 100%;
-  top: 54px;
-  width: 70px; }
+  top: 3.375rem;
+  width: 4.375rem; }
   .fixed-sidebar .open {
     transform: translateX(0%);
     transition-delay: 0.3s;
@@ -582,12 +582,23 @@ header {
 .offline {
   background-color: #fa6341; }
 
+.mobile--open {
+  height: 100%;
+  text-align: center;
+  color: #fff; }
+
 @media (min-height: 576px) and (max-width: 767px) {
   .cover-background-user {
     bottom: 0rem;
     left: .5rem; }
 
   .fixed-sidebar {
+    top: 5.875rem; }
+
+  .fixed-sidebar-left .customScrollBar {
+    height: calc(100% - 9.8rem); }
+
+  .sidebar--small {
     display: none; }
 
   .user-blog-control {
@@ -623,9 +634,9 @@ header {
     padding: 1rem; }
   .rightItem .fr-birth-name {
     font-size: 1rem; } }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   .cover-background-user {
-    bottom: -4rem;
+    bottom: -3rem;
     left: 3.5rem; }
 
   .status-title a {
