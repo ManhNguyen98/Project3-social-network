@@ -775,9 +775,6 @@ input:checked + .slider:before {
   .status-title a {
     font-size: .8rem; }
 
-  .user-name a {
-    font-size: .7rem; }
-
   .user-blog-control {
     right: -3%; }
 
