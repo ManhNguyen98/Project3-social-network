@@ -897,7 +897,41 @@ input:checked + .slider:before {
     }
 }
 // End Setting page
-@media (min-height: 576px) and (max-width:767px){
+// Personal Infomation
+.person-info-panel{
+    padding: 1rem;
+}
+.person-info-item{
+    margin-bottom: 1rem;
+    .title{
+        font-weight: 600;
+    }
+    .text{
+        display: block;
+        font-size: .9rem;
+        color: $extra-dark-gray;
+    }
+}
+.facebook-btn{
+    background-color: #2f5b9d;
+    text-align: center;
+    padding: .5rem;
+    .text{
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+    }
+    &:hover{
+        opacity: .9;
+    }
+}
+.twitter-btn{
+    @extend .facebook-btn;
+    background-color: #38bff1;
+}
+// End Personal Information
+@media (max-width:767px){
     .cover-background-user{
         bottom: 0rem;
         left: .5rem;

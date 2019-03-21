@@ -720,7 +720,33 @@ input:checked + .slider:before {
     font-size: .75rem;
     color: #888da8; }
 
-@media (min-height: 576px) and (max-width: 767px) {
+.person-info-panel {
+  padding: 1rem; }
+
+.person-info-item {
+  margin-bottom: 1rem; }
+  .person-info-item .title {
+    font-weight: 600; }
+  .person-info-item .text {
+    display: block;
+    font-size: .9rem;
+    color: #888da8; }
+
+.facebook-btn, .twitter-btn {
+  background-color: #2f5b9d;
+  text-align: center;
+  padding: .5rem; }
+  .facebook-btn .text, .twitter-btn .text {
+    color: #fff; }
+  .facebook-btn a, .twitter-btn a {
+    text-decoration: none; }
+  .facebook-btn:hover, .twitter-btn:hover {
+    opacity: .9; }
+
+.twitter-btn {
+  background-color: #38bff1; }
+
+@media (max-width: 767px) {
   .cover-background-user {
     bottom: 0rem;
     left: .5rem; }
