@@ -1,3 +1,5 @@
+$extra-dark-gray: #888da8;
+
 .parent{
 	display: table;
 	
@@ -38,7 +40,6 @@
 }
 .avatar-border{
 	border-radius: 50%;
-	border: solid 2px white;
 }
 
 .friend-list{
@@ -88,4 +89,68 @@
 }
 h5{
  	color: grey;
+}
+
+.friend-item{
+	width: 100%;
+	height: 400px;
+	.friend-item--coverbackground{
+		width: 100%;
+		height:25%;
+	}
+	.friend-item--avatar{
+		left: 33%;
+		top: -12%;
+		height: 20%;
+	}
+	.friend-item--title {
+		height: 30%;
+		width: 100%;
+		top: -20%;
+		.friend-item--title-name{
+			font-weight: 600;
+			font-size: 1rem;
+		}
+		.friend-item--title-description{
+			font-size: .9rem;
+			color: $extra-dark-gray;
+		}
+	}
+	.friend-item--content{
+		top: -15%;
+		width: 100%;
+	}
+}
+
+.font-weight-600{
+	font-weight: 600;
+	font-size: .9rem;
+}
+.description{
+	font-size: .9rem;
+	color: $extra-dark-gray;
+}
+
+.chatBtn{
+	display: inline-block;
+	top: 10%;
+	i{
+		opacity: .95;
+	}
+	&:hover{
+		opacity: 1;
+	}
+}
+
+.group-item{
+	width: 100%;
+	height: 400px;
+	.group-item--avatar{
+		width: 100%;
+		height: 50%;
+	}
+	.group-item--title{
+		width: 100%;
+		height: 50%;
+	}
 }
