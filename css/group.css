@@ -11,7 +11,7 @@
   border-radius: 50%; }
 
 .border-dashed {
-  border: dashed 2px #C0C0C0; }
+  border: dashed 5px #C0C0C0; }
 
 .photo {
   width: 100%;
@@ -27,12 +27,16 @@
     width: 100%; }
 
 .avatar {
-  width: 150px;
-  height: 150px; }
+  border-radius: 50%;
+  width: 9.375rem;
+  height: 9.375rem;
+  border: 3px solid #fff; }
 
 .avatar-border {
   border-radius: 50%;
-  border: solid 2px white; }
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid #fff; }
 
 .friend-list .friend-list-item {
   display: inline-block;
@@ -58,19 +62,86 @@
 
 .ava {
   width: 90px;
-  height: 90px; }
+  height: 90px;
+  left: 33%;
+  top: -50%; }
 
 .inline a {
-  color: #A0A0A0; }
+  color: #A0A0A0;
+  text-decoration: none; }
   .inline a li {
     display: inline-block;
     padding: 0.5rem; }
     .inline a li p {
       font-size: 0.8rem; }
     .inline a li h6 {
-      color: grey; }
+      color: #000; }
 
-h5 {
-  color: grey; }
+.friendlist-title {
+  color: #000;
+  font-weight: 600; }
+
+.friend-item {
+  width: 100%;
+  height: 400px; }
+  .friend-item .friend-item--coverbackground {
+    width: 100%;
+    height: 25%; }
+  .friend-item .friend-item--avatar {
+    height: 20%; }
+  .friend-item .friend-item--title {
+    height: 30%;
+    width: 100%;
+    top: -20%; }
+    .friend-item .friend-item--title .friend-item--title-name {
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem; }
+    .friend-item .friend-item--title .friend-item--title-description {
+      font-size: .9rem;
+      color: #888da8; }
+  .friend-item .friend-item--content {
+    top: -15%;
+    width: 100%; }
+
+.font-weight-600 {
+  font-weight: 600;
+  font-size: .9rem;
+  color: #000; }
+
+.description {
+  font-size: .9rem;
+  color: #888da8; }
+
+.chatBtn, .addFrBtn {
+  display: inline-block;
+  top: 10%;
+  background-color: #38a9ff;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3.5rem;
+  color: #fff;
+  opacity: .95;
+  text-decoration: none; }
+  .chatBtn i, .addFrBtn i {
+    font-size: 1.5rem; }
+  .chatBtn:hover, .addFrBtn:hover {
+    opacity: 1;
+    color: #fff; }
+
+.addFrBtn {
+  background-color: #ff5e3a;
+  margin-left: 1rem; }
+
+.group-item {
+  width: 100%;
+  height: 400px; }
+  .group-item .group-item--avatar {
+    width: 100%;
+    height: 50%; }
+  .group-item .group-item--title {
+    width: 100%;
+    height: 50%; }
 
 /*# sourceMappingURL=group.css.map */
