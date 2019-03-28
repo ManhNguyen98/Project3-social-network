@@ -406,7 +406,8 @@ header {
   border-bottom: 1px solid #e6ecf5; }
   .status i, .user-blog i {
     font-size: 24px; }
-  .status input, .user-blog input {
+  .status textarea, .user-blog textarea {
+    resize: none;
     border: none; }
 
 .status-title {
@@ -807,4 +808,4 @@ input:checked + .slider:before {
   .profile-section {
     padding-left: 0; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style1.css.map */
